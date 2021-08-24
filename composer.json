@@ -1,6 +1,6 @@
 {
     "name": "njuptaaa/noj-large-file-upload",
-    "description": "noj large file upload extension.",
+    "description": "NOJ large file upload extension.",
     "type": "library",
     "keywords": ["laravel-admin", "extension", "catlane", "chunk_file", "noj", "large-file-upload"],
     "homepage": "https://github.com/NJUPTAAA/NOJ_Large_File_Upload",
