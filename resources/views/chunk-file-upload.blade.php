@@ -1,11 +1,10 @@
-<div class="form-group {!! !$errors->has($label) ?: 'has-error' !!}" >
+<div class="{{$viewClass['form-group']}} {!! !$errors->has($errorKey) ? '' : 'has-error' !!}">
 
-    <label for="{{$id}}" class="col-sm-2 control-label" >{{$label}}</label>
-    <div class="col-sm-8">
+    <label for="{{$id}}" class="{{$viewClass['label']}} control-label">{{$label}}</label>
+    <div class="{{$viewClass['field']}}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-	    <span style="color: red;">
-            @include('admin::form.error')
-        </span>
+
+	    @include('admin::form.error')
 
         <div id="wrapper">
             <div id="container">
